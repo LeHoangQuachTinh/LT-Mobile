@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<BienLai> ds = new ArrayList<>();
+        ArrayList<BienLai> ds_145 = new ArrayList<>();
         int choice;
 
         do {
@@ -22,19 +22,19 @@ public class Main {
                 case 1:
                     BienLai bl = new BienLai();
                     bl.nhap(sc);
-                    ds.add(bl);
+                    ds_145.add(bl);
                     break;
                 case 2:
                     System.out.println("=== DANH SACH BIEN LAI ===");
-                    for (BienLai b : ds) {
+                    for (BienLai b : ds_145) {
                         b.hienThi();
                     }
                     break;
                 case 3:
                     System.out.println("=== TIEN DIEN MOI HO ===");
-                    for (BienLai b : ds) {
+                    for (BienLai b : ds_145) {
                         System.out.printf("Chu ho: %s -> Tien: %d VND\n",
-                                b.getTenChuHo(), b.getSoTien());
+                                b.getTenChuHo(), b.getSoTien_145());
                     }
                     break;
                 case 0:
