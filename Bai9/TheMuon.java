@@ -6,22 +6,22 @@ import java.util.Date;
 import java.util.Scanner;
 
 class TheMuon {
-    private String soPhieuMuon;
-    private LocalDate ngayMuon;
-    private LocalDate hanTra;
+    private String soPhieuMuon_145;
+    private LocalDate ngayMuon_145;
+    private LocalDate hanTra_145;
     private String soHieuSach;
     private SinhVien sv;
 
     public void nhap(Scanner sc) {
         sc.nextLine(); // clear buffer
         System.out.print("Nhap so phieu muon: ");
-       String soPhieuMuon = sc.nextLine();
+       String soPhieuMuon_145 = sc.nextLine();
         System.out.print("Nhap ngay muon (dd/MM/yyyy): ");
-        String strNgayMuon = sc.nextLine();
-        ngayMuon = strToLocalDate(strNgayMuon);
+        String strNgayMuon_145 = sc.nextLine();
+        ngayMuon_145 = strToLocalDate(strNgayMuon_145);
         System.out.print("Nhap han tra (dd/MM/yyyy): ");
-        String strHanTra = sc.nextLine();
-        hanTra = strToLocalDate(strHanTra);
+        String strHanTra_145 = sc.nextLine();
+        hanTra_145 = strToLocalDate(strHanTra_145);
         System.out.print("Nhap so hieu sach: ");
         soHieuSach = sc.nextLine();
 
@@ -41,14 +41,14 @@ class TheMuon {
     }
     public void hienThi() {
         System.out.printf("So phieu: %s, Ngay muon: %s, Han tra: %s, So hieu sach: %s\n",
-                soPhieuMuon, ngayMuon, hanTra, soHieuSach);
+                soPhieuMuon_145, ngayMuon_145, hanTra_145, soHieuSach);
         sv.hienThi();
     }
 
     public boolean canTraCuoiThang() {
         // tách ngày từ hạn trả: định dạng dd/MM/yyyy
         try {
-            String[] parts = hanTra.toString().split("/");
+            String[] parts = hanTra_145.toString().split("/");
             int ngay = Integer.parseInt(parts[0]);
             // nếu ngày = 30 hoặc 31 thì coi là cuối tháng
             return (ngay == 30 || ngay == 31);
@@ -58,7 +58,7 @@ class TheMuon {
     }
 
     public String getTenSV() {
-        return sv.getHoTen();
+        return sv.getHoTen_145();
     }
 
     public String getSoHieuSach() {

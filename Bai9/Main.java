@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<TheMuon> ds = new ArrayList<>();
+        ArrayList<TheMuon> ds_145 = new ArrayList<>();
         int choice;
 
         do {
@@ -22,17 +22,17 @@ public class Main {
                 case 1:
                     TheMuon tm = new TheMuon();
                     tm.nhap(sc);
-                    ds.add(tm);
+                    ds_145.add(tm);
                     break;
                 case 2:
                     System.out.println("=== DANH SACH THE MUON ===");
-                    for (TheMuon t : ds) {
+                    for (TheMuon t : ds_145) {
                         t.hienThi();
                     }
                     break;
                 case 3:
                     System.out.println("=== DANH SACH PHAI TRA CUOI THANG ===");
-                    for (TheMuon t : ds) {
+                    for (TheMuon t : ds_145) {
                         if (t.canTraCuoiThang()) {
                             System.out.printf("Sinh vien: %s - Sach: %s\n",
                                     t.getTenSV(), t.getSoHieuSach());
