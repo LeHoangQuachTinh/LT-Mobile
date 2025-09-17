@@ -86,7 +86,6 @@ public class PhanSo {
             if (this.mauSo_145 == 0) 
                 System.out.println("Mẫu số không thể bằng 0. Vui lòng nhập lại.");
         } while (this.mauSo_145 == 0);
-        // rutGon();
     }
 
     public String hienThiPS() {
