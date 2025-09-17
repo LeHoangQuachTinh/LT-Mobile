@@ -5,26 +5,26 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Nguoi {
-    private String hoTen;
-    private Date ngaySinh; // dạng dd/MM/yyyy
-    private String queQuan;
+    private String hoTen_145;
+    private Date ngaySinh_145; // dạng dd/MM/yyyy
+    private String queQuan_145;
 
     public Nguoi(){
 
     }
-    public Nguoi(String hoTen,Date ngaySinh,String queQuan){
-        this.hoTen = hoTen;
-        this.ngaySinh = ngaySinh;
-        this.queQuan = queQuan;
+    public Nguoi(String hoTen_145,Date ngaySinh_145,String queQuan_145){
+        this.hoTen_145 = hoTen_145;
+        this.ngaySinh_145 = ngaySinh_145;
+        this.queQuan_145 = queQuan_145;
     }
     public void nhap(Scanner sc) {
         System.out.print("Nhap ho ten: ");
-        hoTen = sc.nextLine();
+        hoTen_145 = sc.nextLine();
         System.out.print("Nhap ngay sinh (dd/MM/yyyy): ");
         String strdate = sc.nextLine();
-        ngaySinh = strToDate(strdate);
+        ngaySinh_145 = strToDate(strdate);
         System.out.print("Nhap que quan: ");
-        queQuan = sc.nextLine();
+        queQuan_145 = sc.nextLine();
     }
     private Date strToDate(String strDate){
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -37,18 +37,18 @@ public class Nguoi {
     }
 
     public void hienThi() {
-        System.out.println("Ho ten: " + hoTen + ", Ngay sinh: " + ngaySinh.toString() + ", Que quan: " + queQuan);
+        System.out.println("Ho ten: " + hoTen_145 + ", Ngay sinh: " + ngaySinh_145.toString() + ", Que quan: " + queQuan_145);
     }
 
-    public String getHoTen() {
-        return hoTen;
+    public String getHoTen_145() {
+        return hoTen_145;
     }
 
-    public Date getNgaySinh() {
-        return ngaySinh;
+    public Date getNgaySinh_145() {
+        return ngaySinh_145;
     }
 
-    public String getQueQuan() {
-        return queQuan;
+    public String getQueQuan_145() {
+        return queQuan_145;
     }
 }

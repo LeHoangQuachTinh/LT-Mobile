@@ -1,10 +1,12 @@
 package Bai7;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<HSHocSinh> ds = new ArrayList<>();
+        ArrayList<HSHocSinh> ds_145 = new ArrayList<>();
         int chon;
 
         do {
@@ -24,18 +26,18 @@ public class Main {
                         System.out.println("\nNhap thong tin hoc sinh thu " + (i+1));
                         HSHocSinh hs = new HSHocSinh();
                         hs.nhap(sc);
-                        ds.add(hs);
+                        ds_145.add(hs);
                     }
                     break;
 
                 case 2:
                     System.out.println("\n--- Hoc sinh sinh nam 1985 va que Thai Nguyen ---");
                     boolean timThay = false;
-                    for (HSHocSinh hs : ds) {
+                    for (HSHocSinh hs : ds_145) {
                         Calendar cal = Calendar.getInstance();
-                        cal.setTime(hs.getNgaySinh());
+                        cal.setTime(hs.getNgaySinh_145());
                         int year = cal.get(Calendar.YEAR);
-                        if (year == 1985 && hs.getQueQuan().equalsIgnoreCase("Thai Nguyen")) {
+                        if (year == 1985 && hs.getQueQuan_145().equalsIgnoreCase("Thai Nguyen")) {
                             hs.hienThi();
                             timThay = true;
                         }
@@ -48,8 +50,8 @@ public class Main {
                 case 3:
                     System.out.println("\n--- Hoc sinh lop 10A1 ---");
                     boolean co = false;
-                    for (HSHocSinh hs : ds) {
-                        if (hs.getLop().equalsIgnoreCase("10A1")) {
+                    for (HSHocSinh hs : ds_145) {
+                        if (hs.getLop_145().equalsIgnoreCase("10A1")) {
                             hs.hienThi();
                             co = true;
                         }
