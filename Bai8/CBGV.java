@@ -3,29 +3,29 @@ package Bai8;
 import java.util.Scanner;
 
 public class CBGV extends Nguoi {
-    private double luongCung;
-    private double thuong;
-    private double phat;
+    private double luongCung_145;
+    private double thuong_145;
+    private double phat_145;
 
     public void nhap(Scanner sc) {
         super.nhap(sc);
         System.out.print("Nhap luong cung: ");
-        luongCung = Double.parseDouble(sc.nextLine());
-        System.out.print("Nhap thuong: ");
-        thuong = Double.parseDouble(sc.nextLine());
-        System.out.print("Nhap phat: ");
-        phat = Double.parseDouble(sc.nextLine());
+        luongCung_145 = Double.parseDouble(sc.nextLine());
+        System.out.print("Nhap thuong_145: ");
+        thuong_145 = Double.parseDouble(sc.nextLine());
+        System.out.print("Nhap phat_145: ");
+        phat_145 = Double.parseDouble(sc.nextLine());
     }
 
     public double tinhLuongThucLinh() {
-        return luongCung + thuong - phat;
+        return luongCung_145 + thuong_145 - phat_145;
     }
 
     public void hienThi() {
         super.hienThi();
-        System.out.println("Luong cung: " + luongCung + 
-                           ", Thuong: " + thuong + 
-                           ", Phat: " + phat + 
+        System.out.println("Luong cung: " + luongCung_145 + 
+                           ", Thuong_145: " + thuong_145 + 
+                           ", Phat_145: " + phat_145 + 
                            ", Luong thuc linh: " + tinhLuongThucLinh());
     }
 }

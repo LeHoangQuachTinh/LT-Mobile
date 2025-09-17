@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<CBGV> ds = new ArrayList<>();
+        ArrayList<CBGV> ds_145 = new ArrayList<>();
         int choice;
 
         do {
@@ -23,17 +23,17 @@ public class Main {
                 case 1:
                     CBGV gv = new CBGV();
                     gv.nhap(sc);
-                    ds.add(gv);
+                    ds_145.add(gv);
                     break;
                 case 2:
                     System.out.println("=== DANH SACH CBGV ===");
-                    for (CBGV g : ds) {
+                    for (CBGV g : ds_145) {
                         g.hienThi();
                     }
                     break;
                 case 3:
                     System.out.println("=== DANH SACH CBGV LUONG >= 8 TRIEU ===");
-                    for (CBGV g : ds) {
+                    for (CBGV g : ds_145) {
                         if (g.tinhLuongThucLinh() >= 8000000) {
                             g.hienThi();
                         }
