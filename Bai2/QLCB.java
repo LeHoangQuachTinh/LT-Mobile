@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 class QLCB {
-    private List<CanBo> dscb = new ArrayList<>();
+    private List<CanBo> dscb_145 = new ArrayList<>();
 
     public QLCB(){}
 
@@ -30,11 +30,11 @@ class QLCB {
         this.themCanBo(cb);
     }
     public void themCanBo(CanBo cb){
-        this.dscb.add(cb);
+        this.dscb_145.add(cb);
     }
     public void timKiemTheoTen(String hoTen) {
         boolean found = false;
-        for (CanBo cb : dscb) {
+        for (CanBo cb : dscb_145) {
             if (cb.getHoTen_145().equalsIgnoreCase(hoTen)) {
                 cb.hienThiThongTin();
                 System.out.println("-----------------------");
@@ -47,7 +47,7 @@ class QLCB {
     }
 
     public void hienThiTatCa() {
-        for (CanBo cb : dscb) {
+        for (CanBo cb : dscb_145) {
             cb.hienThiThongTin();
             System.out.println("-----------------------");
         }

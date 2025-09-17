@@ -7,7 +7,9 @@ class CanBo {
     protected String gioiTinh_145;
     protected String diaChi_145;
 
-    public CanBo() {}
+    public CanBo() {
+        
+    }
 
     public CanBo(String hoTen_145, String ngaySinh_145, String gioiTinh_145, String diaChi_145) {
         this.hoTen_145 = hoTen_145;

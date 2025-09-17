@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
      public static void main(String[] args) {
-        QLCB ql = new QLCB();
+        QLCB ql_145 = new QLCB();
         Scanner sc = new Scanner(System.in);
         int chon;
 
@@ -17,15 +17,15 @@ public class Main {
 
             switch (chon) {
                 case 1:
-                    ql.nhapCanBo(sc);
+                    ql_145.nhapCanBo(sc);
                     break;
                 case 2:
                     System.out.print("Nhập họ tên cần tìm: ");
                     String ten = sc.nextLine();
-                    ql.timKiemTheoTen(ten);
+                    ql_145.timKiemTheoTen(ten);
                     break;
                 case 3:
-                    ql.hienThiTatCa();
+                    ql_145.hienThiTatCa();
                     break;
                 case 0:
                     System.out.println("Kết thúc chương trình.");

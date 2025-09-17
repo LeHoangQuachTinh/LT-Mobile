@@ -4,7 +4,9 @@ import java.util.Scanner;
 class NhanVien extends CanBo {
     private String congViec_145;
 
-    public NhanVien(){}
+    public NhanVien(){
+        
+    }
     public NhanVien(String hoTen, String ngaySinh, String gioiTinh, String diaChi, String congViec_145) {
         super(hoTen, ngaySinh, gioiTinh, diaChi);
         this.congViec_145 = congViec_145;

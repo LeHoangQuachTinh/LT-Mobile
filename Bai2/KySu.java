@@ -4,7 +4,9 @@ import java.util.Scanner;
 class KySu extends CanBo {
     private String nganhDaoTao_145;
 
-    public KySu(){}
+    public KySu(){
+        
+    }
 
     public KySu(String hoTen, String ngaySinh, String gioiTinh, String diaChi, String nganhDaoTao_145) {
         super(hoTen, ngaySinh, gioiTinh, diaChi);
