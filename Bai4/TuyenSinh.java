@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 class TuyenSinh {
     private final List<ThiSinh> danhSach = new ArrayList<>();
 
@@ -7,39 +9,39 @@ class TuyenSinh {
         System.out.println("Chọn khối thi: 1.Khối A  2.Khối B  3.Khối C");
         int loai = Integer.parseInt(sc.nextLine());
 
-        ThiSinh ts = null;
+        ThiSinh ts_145 = null;
 
         switch (loai) {
             case 1:
-                ts = new ThiSinhKhoiA();
+                ts_145 = new ThiSinhKhoiA();
                 break;
             case 2:
-               ts = new ThiSinhKhoiB();
+               ts_145 = new ThiSinhKhoiB();
                 break;
             case 3:
-               ts = new ThiSinhKhoiC();
+               ts_145 = new ThiSinhKhoiC();
                 break;
             default:
                 System.out.println("Lựa chọn không hợp lệ!");
         }
-        ts.nhapThongTin(sc);
-        this.themThiSinh(ts);
+        ts_145.nhapThongTin(sc);
+        this.themThiSinh(ts_145);
     }
-    public void themThiSinh(ThiSinh ts){
-        this.danhSach.add(ts);
+    public void themThiSinh(ThiSinh ts_145){
+        this.danhSach.add(ts_145);
     }
     public void hienThiTatCa() {
-        for (ThiSinh ts : this.danhSach) {
-            ts.hienThiThongTin();
+        for (ThiSinh ts_145 : this.danhSach) {
+            ts_145.hienThiThongTin();
             System.out.println("------------------");
         }
     }
 
     public void timKiemTheoSBD(String sbd) {
         boolean found = false;
-        for (ThiSinh ts : this.danhSach) {
-            if (ts.getSoBaoDanh().equalsIgnoreCase(sbd)) {
-                ts.hienThiThongTin();
+        for (ThiSinh ts_145 : this.danhSach) {
+            if (ts_145.getSoBaoDanh_145().equalsIgnoreCase(sbd)) {
+                ts_145.hienThiThongTin();
                 System.out.println("------------------");
                 found = true;
             }

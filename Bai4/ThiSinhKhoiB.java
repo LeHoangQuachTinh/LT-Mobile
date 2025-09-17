@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 class ThiSinhKhoiB extends ThiSinhKhoiA {
-    private String mon1 = "Toán";
-    private String mon2 = "Hóa";
-    private String mon3 = "Sinh";
+    private String mon1_145 = "Toán";
+    private String mon2_145 = "Hóa";
+    private String mon3_145 = "Sinh";
     public ThiSinhKhoiB(){
     }
     public ThiSinhKhoiB(String soBaoDanh, String hoTen, String diaChi, String uuTien) {
@@ -13,7 +13,7 @@ class ThiSinhKhoiB extends ThiSinhKhoiA {
     @Override
     public void hienThiThongTin() {
         super.hienThiThongTin();
-          System.out.printf("Khối thi: B (%s, %s, %s)\n", this.mon1, this.mon2, this.mon3);
+          System.out.printf("Khối thi: B (%s, %s, %s)\n", this.mon1_145, this.mon2_145, this.mon3_145);
     }
 
     @Override
