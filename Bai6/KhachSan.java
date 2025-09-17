@@ -6,10 +6,10 @@ import java.util.List;
 import java.util.Scanner;
 
 class KhachSan {
-    private List<KhachTro> dsKhachTro;
+    private List<KhachTro> dsKhachTro_145;
 
     public KhachSan() {
-        dsKhachTro = new ArrayList<>();
+        dsKhachTro_145 = new ArrayList<>();
     }
 
     public void nhapDanhSach(Scanner sc) {
@@ -20,20 +20,20 @@ class KhachSan {
             System.out.println("Nhập thông tin khách trọ thứ " + (i + 1));
             KhachTro kt = new KhachTro();
             kt.nhapThongTin(sc);
-            dsKhachTro.add(kt);
+            dsKhachTro_145.add(kt);
         }
     }
 
     public void hienThiDanhSach() {
         System.out.println("===== Danh sách khách trọ =====");
-        for (KhachTro kt : dsKhachTro) {
+        for (KhachTro kt : dsKhachTro_145) {
             kt.hienThiThongTin();
             System.out.println("-------------------");
         }
     }
 
     public void xoaKhachTro(String cmnd) {
-        Iterator<KhachTro> it = dsKhachTro.iterator();
+        Iterator<KhachTro> it = dsKhachTro_145.iterator();
         while (it.hasNext()) {
             KhachTro kt = it.next();
             if (kt.getCmnd().equals(cmnd)) {
@@ -46,7 +46,7 @@ class KhachSan {
     }
 
     public void tinhTienTraPhong(String cmnd) {
-        for (KhachTro kt : dsKhachTro) {
+        for (KhachTro kt : dsKhachTro_145) {
             if (kt.getCmnd().equals(cmnd)) {
                 System.out.printf("Khách hàng %s cần trả: %.2f VND\n",
                                   kt.getCmnd(), kt.tinhTien());

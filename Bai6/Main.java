@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        KhachSan ks = new KhachSan();
+        KhachSan ks_145 = new KhachSan();
         int choice;
 
         do {
@@ -19,22 +19,22 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    ks.nhapDanhSach(sc);
+                    ks_145.nhapDanhSach(sc);
                     break;
                 case 2:
-                    ks.hienThiDanhSach();
+                    ks_145.hienThiDanhSach();
                     break;
                 case 3:
                     sc.nextLine(); // bỏ dòng thừa
                     System.out.print("Nhap CMND can xoa: ");
                     String cmndXoa = sc.nextLine();
-                    ks.xoaKhachTro(cmndXoa);
+                    ks_145.xoaKhachTro(cmndXoa);
                     break;
                 case 4:
                     sc.nextLine();
                     System.out.print("Nhap CMND de tinh tien: ");
                     String cmndTinh = sc.nextLine();
-                    ks.tinhTienTraPhong(cmndTinh);
+                    ks_145.tinhTienTraPhong(cmndTinh);
                     break;
                 case 0:
                     System.out.println("Thoat chuong trinh!");
