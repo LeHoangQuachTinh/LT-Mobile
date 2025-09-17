@@ -1,7 +1,9 @@
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 class QuanLySach {
-    private List<TaiLieu> danhSach = new ArrayList<>();
+    private List<TaiLieu> danhSach_145 = new ArrayList<>();
 
 
     public QuanLySach(){}
@@ -31,13 +33,13 @@ class QuanLySach {
 
     }
     public void themTaiLieu(TaiLieu tl){
-        this.danhSach.add(tl);
+        this.danhSach_145.add(tl);
     }
 
     public void timKiemTheoMa(String ma) {
         boolean found = false;
-        for (TaiLieu tl : danhSach) {
-            if (tl.getMaTaiLieu().equalsIgnoreCase(ma)) {
+        for (TaiLieu tl : danhSach_145) {
+            if (tl.getMaTaiLieu_145().equalsIgnoreCase(ma)) {
                 tl.hienThiThongTin();
                 System.out.println("-------------------");
                 found = true;
@@ -48,7 +50,7 @@ class QuanLySach {
 
     public void timKiemTheoLoai(String loai) {
         boolean found = false;
-        for (TaiLieu tl : danhSach) {
+        for (TaiLieu tl : danhSach_145) {
             if ((loai.equalsIgnoreCase("sach") && tl instanceof Sach) ||
                 (loai.equalsIgnoreCase("tapchi") && tl instanceof TapChi) ||
                 (loai.equalsIgnoreCase("bao") && tl instanceof Bao)) {
@@ -61,7 +63,7 @@ class QuanLySach {
     }
 
     public void hienThiTatCa() {
-        for (TaiLieu tl : danhSach) {
+        for (TaiLieu tl : danhSach_145) {
             tl.hienThiThongTin();
             System.out.println("-------------------");
         }

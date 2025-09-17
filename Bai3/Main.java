@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        QuanLySach ql = new QuanLySach();
+        QuanLySach ql_145 = new QuanLySach();
         Scanner sc = new Scanner(System.in);
         int chon;
 
@@ -18,20 +18,20 @@ public class Main {
 
             switch (chon) {
                 case 1:
-                    ql.nhapTaiLieu(sc);
+                    ql_145.nhapTaiLieu(sc);
                     break;
                 case 2:
                     System.out.print("Nhập mã cần tìm: ");
                     String ma = sc.nextLine();
-                    ql.timKiemTheoMa(ma);
+                    ql_145.timKiemTheoMa(ma);
                     break;
                 case 3:
                     System.out.print("Nhập loại cần tìm (sach/bao/tapchi): ");
                     String loai = sc.nextLine();
-                    ql.timKiemTheoLoai(loai);
+                    ql_145.timKiemTheoLoai(loai);
                     break;
                 case 4:
-                    ql.hienThiTatCa();
+                    ql_145.hienThiTatCa();
                     break;
                 case 0:
                     System.out.println("Kết thúc.");

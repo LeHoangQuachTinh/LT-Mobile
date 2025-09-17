@@ -2,39 +2,39 @@
 import java.util.Scanner;
 
 class TaiLieu {
-    protected  String maTaiLieu;
-    protected   String tenNhaXuatBan;
-    protected  int soBanPhatHanh;
+    protected  String maTaiLieu_145;
+    protected   String tenNhaXuatBan_145;
+    protected  int soBanPhatHanh_145;
 
     public TaiLieu(){};
 
-    public TaiLieu(String maTaiLieu, String tenNhaXuatBan, int soBanPhatHanh) {
-        this.maTaiLieu = maTaiLieu;
-        this.tenNhaXuatBan = tenNhaXuatBan;
-        this.soBanPhatHanh = soBanPhatHanh;
+    public TaiLieu(String maTaiLieu_145, String tenNhaXuatBan_145, int soBanPhatHanh_145) {
+        this.maTaiLieu_145 = maTaiLieu_145;
+        this.tenNhaXuatBan_145 = tenNhaXuatBan_145;
+        this.soBanPhatHanh_145 = soBanPhatHanh_145;
     }
 
-    public String getMaTaiLieu() { 
-        return this.maTaiLieu; 
+    public String getMaTaiLieu_145() { 
+        return this.maTaiLieu_145; 
     }
-    public String getTenNhaXuatBan() { 
-        return this.tenNhaXuatBan; 
+    public String getTenNhaXuatBan_145() { 
+        return this.tenNhaXuatBan_145; 
     }
-    public int getSoBanPhatHanh() { 
-        return this.soBanPhatHanh; 
+    public int getSoBanPhatHanh_145() { 
+        return this.soBanPhatHanh_145; 
     }
 
     public void hienThiThongTin() {
-        System.out.println("Mã tài liệu: " + this.maTaiLieu);
-        System.out.println("Nhà xuất bản: " + this.tenNhaXuatBan);
-        System.out.println("Số bản phát hành: " + this.soBanPhatHanh);
+        System.out.println("Mã tài liệu: " + this.maTaiLieu_145);
+        System.out.println("Nhà xuất bản: " + this.tenNhaXuatBan_145);
+        System.out.println("Số bản phát hành: " + this.soBanPhatHanh_145);
     }
     public void nhapThongTin(Scanner sc){
         System.out.print("Nhập mã tài liệu: " );
-        this.maTaiLieu = sc.nextLine();
+        this.maTaiLieu_145 = sc.nextLine();
         System.out.print("Nhập nhà xuất bản: " );
-        this.tenNhaXuatBan = sc.nextLine();
+        this.tenNhaXuatBan_145 = sc.nextLine();
         System.out.print("Nhập số bản phát hành: " );
-        this.soBanPhatHanh = sc.nextInt();
+        this.soBanPhatHanh_145 = sc.nextInt();
     }
 }
