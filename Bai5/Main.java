@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        KhuPho khuPho = new KhuPho();
+        KhuPho khuPho_145 = new KhuPho();
         int choice;
 
         do {
@@ -17,13 +17,13 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    khuPho.nhap(sc);
+                    khuPho_145.nhap(sc);
                     break;
                 case 2:
-                    khuPho.hienThi();
+                    khuPho_145.hienThi();
                     break;
                 case 3:
-                    khuPho.hienThiHoCoNguoi80Tuoi();
+                    khuPho_145.hienThiHoCoNguoi80Tuoi();
                     break;
                 case 0:
                     System.out.println("Thoat chuong trinh!");

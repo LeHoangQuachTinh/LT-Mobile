@@ -1,10 +1,12 @@
 import java.time.LocalDate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 class KhuPho {
-    private List<HoDan> dsHoDan;
+    private List<HoDan> dsHoDan_145;
 
     public KhuPho() {
-        this.dsHoDan = new ArrayList<>();
+        this.dsHoDan_145 = new ArrayList<>();
     }
 
     public void nhap(Scanner sc) {
@@ -15,14 +17,14 @@ class KhuPho {
             System.out.println("Nhập thông tin hộ dân thứ " + (i + 1));
             HoDan hd = new HoDan();
             hd.nhapThongTin(sc);
-            dsHoDan.add(hd);
+            dsHoDan_145.add(hd);
         }
     }
 
     public void hienThiHoCoNguoi80Tuoi() {
         int namHienTai = LocalDate.now().getYear();
         boolean timThay = false;
-        for (HoDan hd : this.dsHoDan) {
+        for (HoDan hd : this.dsHoDan_145) {
             if (hd.coNguoi80Tuoi(namHienTai)) {
                 timThay = true;
             }
@@ -32,7 +34,7 @@ class KhuPho {
         }
     }
      public void hienThi() {
-        for (HoDan hoDan : dsHoDan) {
+        for (HoDan hoDan : dsHoDan_145) {
             hoDan.hienThiThongTin();
         }
     }
