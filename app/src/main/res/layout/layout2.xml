@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView_2145"
+        android:layout_width="70dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- App name -->
+    <TextView
+        android:id="@+id/textView1_2145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ride Booking"
+        android:textColor="#2135A6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageView_2145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Register title -->
+
+    <!-- Subtitle -->
+
+    <!-- Phone label -->
+
+    <TextView
+        android:id="@+id/textView2_2145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Register"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1_2145" />
+
+    <TextView
+        android:id="@+id/textView4_2145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hãy đăng ký tài khoản nếu bạn chưa có!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2_2145" />
+
+    <TextView
+        android:id="@+id/textView5_5_2145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Số điện thoại"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textView4_2145"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Phone input -->
+    <EditText
+        android:id="@+id/editTextPhone_2145"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/bg_input_field"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="+84 366900821"
+        app:layout_constraintTop_toBottomOf="@id/textView5_5_2145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Full name label -->
+    <TextView
+        android:id="@+id/textView5_2145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Họ tên"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editTextPhone_2145"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Full name input -->
+    <EditText
+        android:id="@+id/editTextFullName_2145"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_input_field"
+        android:ems="10"
+        android:hint="Lê Hoàng Quách Tỉnh"
+        android:layout_marginHorizontal="40dp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/textView5_2145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView53_2145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Username"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editTextFullName_2145"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextUserName_2145"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_input_field"
+        android:ems="10"
+        android:hint="QuachTinh"
+        android:layout_marginHorizontal="40dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/textView53_2145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView52_2145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Password"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editTextUserName_2145"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword_2145"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_input_field"
+        android:ems="10"
+        android:hint="123456789"
+        android:layout_marginHorizontal="40dp"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textView52_2145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/btnTogglePassword_2145"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+
+        app:layout_constraintEnd_toEndOf="@id/editTextTextPassword_2145"
+        app:layout_constraintTop_toTopOf="@id/editTextTextPassword_2145"
+        app:layout_constraintBottom_toBottomOf="@id/editTextTextPassword_2145"
+        app:srcCompat="@drawable/eye" />
+
+
+    <Button
+        android:id="@+id/button_2145"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/green"
+        android:text="Đăng ký"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextPassword_2145"
+        app:layout_constraintStart_toStartOf="@id/editTextTextPassword_2145"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextPassword_2145" />
+
+    <!-- "Tôi đã có tài khoản?" -->
+    <TextView
+        android:id="@+id/textView_2145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tôi đã có tài khoản?"
+        android:layout_marginLeft="70dp"
+        app:layout_constraintTop_toBottomOf="@id/button_2145"
+        app:layout_constraintStart_toStartOf="@id/button_2145" />
+
+    <!-- "Sign in" link -->
+    <TextView
+        android:id="@+id/textView3_2145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Sign in"
+        android:textColor="#0927E0"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/textView_2145"
+        app:layout_constraintBottom_toBottomOf="@id/textView_2145"
+        app:layout_constraintStart_toEndOf="@id/textView_2145" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
