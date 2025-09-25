@@ -85,7 +85,7 @@
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginTop="4dp"
-        android:background="@color/white"
+        android:background="@drawable/bg_input_field"
         android:ems="10"
         android:hint="Lê Hoàng Quách Tỉnh"
         android:layout_marginHorizontal="40dp"
@@ -113,15 +113,17 @@
         android:layout_width="0dp"
         android:layout_height="51dp"
         android:layout_marginTop="4dp"
-        android:background="#F8F8F8"
+        android:background="@drawable/bg_input_field"
         android:ems="10"
         android:hint="12345"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/textView6_2145"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextEmailAddress_2145"
         app:layout_constraintStart_toStartOf="@id/editTextTextEmailAddress_2145"
-        app:layout_constraintEnd_toEndOf="@id/editTextTextEmailAddress_2145" />
+        app:layout_constraintTop_toBottomOf="@id/textView6_2145" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
+        android:textSize="16dp"
+        android:textColor="@color/white"
         android:id="@+id/button_2145"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -146,13 +148,14 @@
         app:layout_constraintEnd_toEndOf="@id/button_2145"
         app:layout_constraintHorizontal_bias="0.5" />
 
-    <com.google.android.material.button.MaterialButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button3_2145"
+        android:textColor="@color/white"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/custom_button"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/register"
         android:text="Register"
         app:layout_constraintTop_toBottomOf="@id/textView3_2145"
         app:layout_constraintStart_toStartOf="@id/button_2145"
