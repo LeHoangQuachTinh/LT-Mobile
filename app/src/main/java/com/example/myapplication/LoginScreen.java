@@ -39,8 +39,8 @@ public class LoginScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginScreen.this, ProfileScreen.class);
-                intent.putExtra("Username",edtUserName.getText().toString());
-                intent.putExtra("Password",edtPassword.getText().toString());
+                intent.putExtra("Username",edtUserName_2145.getText().toString());
+                intent.putExtra("Password",edtPassword_2145.getText().toString());
                 startActivity(intent);
             }
         });
