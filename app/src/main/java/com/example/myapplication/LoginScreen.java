@@ -16,8 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class LoginScreen extends AppCompatActivity {
 
-    Button btnLogin;
-    EditText edtUserName,edtPassword;
+    Button btnLogin_2145;
+    EditText edtUserName_2145,edtPassword_2145;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,11 +30,11 @@ public class LoginScreen extends AppCompatActivity {
             return insets;
         });
 
-        btnLogin = findViewById(R.id.button_2145);
-        edtUserName = findViewById(R.id.editTextTextEmailAddress_2145);
-        edtPassword = findViewById(R.id.editTextTextPassword2_2145);
+        btnLogin_2145 = findViewById(R.id.button_2145);
+        edtUserName_2145 = findViewById(R.id.editTextTextEmailAddress_2145);
+        edtPassword_2145 = findViewById(R.id.editTextTextPassword2_2145);
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnLogin_2145.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("RestrictedApi")
             @Override
             public void onClick(View v) {
