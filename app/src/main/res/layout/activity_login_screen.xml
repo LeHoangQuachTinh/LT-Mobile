@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/green"
+        tools:ignore="MissingClass">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="44dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/google_icon"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="28dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegister"
+            app:srcCompat="@drawable/apple_icon"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="44dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/txtRegister"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegister"
+            app:srcCompat="@drawable/microsoft_icon"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="34dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:elevation="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2_2145"
+            app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2_2145"
+            app:srcCompat="@drawable/eye" />
+
+        <ImageView
+            android:id="@+id/imageView_2145"
+            android:layout_width="70dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView_2145"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ride Booking"
+            android:textColor="#2135A6"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView_2145" />
+
+        <TextView
+            android:id="@+id/textView2_2145"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="Welcome"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView_2145" />
+
+        <TextView
+            android:id="@+id/textView4_2145"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Hãy đăng nhập để trải nghiệm dịch vụ đặt xe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView2_2145" />
+
+        <TextView
+            android:id="@+id/textView5_2145"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Username"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView4_2145" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress_2145"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_input_field"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:ems="10"
+            android:hint="Lê Hoàng Quách Tỉnh"
+            android:inputType="textEmailAddress"
+            android:password="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView5_2145" />
+
+        <TextView
+            android:id="@+id/textView6_2145"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Password"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress_2145" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2_2145"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_input_field"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:ems="10"
+            android:hint="12345"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@id/editTextTextEmailAddress_2145"
+            app:layout_constraintStart_toStartOf="@id/editTextTextEmailAddress_2145"
+            app:layout_constraintTop_toBottomOf="@id/textView6_2145" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_2145"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/green"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@id/editTextTextPassword2_2145"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/editTextTextPassword2_2145"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPassword2_2145" />
+
+        <TextView
+            android:id="@+id/textView3_2145"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Forgot password?"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2_2145"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2_2145"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="52dp"
+            android:text="Register Now"
+            android:textColor="#1026ED"
+            app:layout_constraintEnd_toEndOf="@+id/button_2145"
+            app:layout_constraintTop_toBottomOf="@+id/button_2145"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="You're not account?"
+            app:layout_constraintEnd_toStartOf="@+id/txtRegister"
+            app:layout_constraintHorizontal_bias="0.794"
+            app:layout_constraintStart_toStartOf="@+id/button_2145"
+            app:layout_constraintTop_toBottomOf="@+id/button_2145"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="44dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/facebook_icon"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
