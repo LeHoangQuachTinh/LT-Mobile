@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,10 +14,13 @@ import java.util.List;
 public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
     private Context context;
     private List<MyModel> list;
+    private SelectListener listener;
 
-    public CustomAdapter(Context context, List<MyModel> list) {
+
+    public CustomAdapter(Context context, List<MyModel> list, SelectListener listener) {
         this.context = context;
         this.list = list;
+        this.listener = listener;
     }
 
 
@@ -32,11 +34,21 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
         holder.textName.setText(list.get(position).getName());
         holder.textAge.setText(String.format("Tuổi: %s", String.valueOf(list.get(position).getAge())));
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int adapterPosition = holder.getAdapterPosition();
 
+                if (adapterPosition != RecyclerView.NO_POSITION) {
+                    listener.onItemClicked(list.get(adapterPosition));
+                }
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
         return list.size();
     }
+
 }

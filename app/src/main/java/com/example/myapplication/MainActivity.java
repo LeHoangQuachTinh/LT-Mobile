@@ -20,11 +20,10 @@ import com.google.android.material.snackbar.Snackbar;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity implements SelectListener{
     RecyclerView recyclerView;
     List<MyModel> myModelList;
     CustomAdapter customAdapter;
-    SearchView searchView;
     LinearLayout linearLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,8 +67,14 @@ public class MainActivity extends AppCompatActivity{
         myModelList.add(new MyModel("Hoàng Bảo Ngọc", 18));
         myModelList.add(new MyModel("Vũ Tiến Dũng", 23));
 
-        customAdapter = new CustomAdapter(this,myModelList);
+        customAdapter = new CustomAdapter(this,myModelList,this);
         recyclerView.setAdapter(customAdapter);
+
+    }
+
+    @Override
+    public void onItemClicked(MyModel myModel) {
+        Toast.makeText(this, myModel.getName(), Toast.LENGTH_SHORT).show();
 
     }
 
