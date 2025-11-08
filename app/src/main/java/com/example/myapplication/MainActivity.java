@@ -36,9 +36,8 @@ public class MainActivity extends AppCompatActivity implements SelectListener{
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        linearLayout = findViewById(R.id.linear_layout);
         searchView = findViewById(R.id.search_view);
+        linearLayout = findViewById(R.id.linear_layout);
         displayItems();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -51,8 +50,8 @@ public class MainActivity extends AppCompatActivity implements SelectListener{
                 return true;
             }
         });
-
-
+        ItemTouchHelper helper = new ItemTouchHelper(callback);
+        helper.attachToRecyclerView(recyclerView);
     }
     private void filter(String newText){
         List<MyModel> filteredList = new ArrayList<>();
@@ -63,7 +62,6 @@ public class MainActivity extends AppCompatActivity implements SelectListener{
         }
         customAdapter.filterList(filteredList);
     }
-
     private void displayItems(){
         recyclerView = findViewById(R.id.recycle_main);
         recyclerView.setHasFixedSize(true);
@@ -100,5 +98,19 @@ public class MainActivity extends AppCompatActivity implements SelectListener{
         Toast.makeText(this, myModel.getName(), Toast.LENGTH_SHORT).show();
 
     }
+    ItemTouchHelper.SimpleCallback callback = new ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+        @Override
+        public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+            return false;
+        }
 
+        @Override
+        public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+            Snackbar snackbar = Snackbar.make(linearLayout,"Item Deleted!",Snackbar.LENGTH_LONG);
+            snackbar.show();
+
+            myModelList.remove(viewHolder.getAdapterPosition());
+            customAdapter.notifyDataSetChanged();
+        }
+    };
 }
