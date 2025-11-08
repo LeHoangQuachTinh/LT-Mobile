@@ -53,4 +53,5 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
         list = filteredList;
         notifyDataSetChanged();
     }
+
 }

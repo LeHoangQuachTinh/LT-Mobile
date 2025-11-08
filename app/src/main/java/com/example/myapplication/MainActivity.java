@@ -112,5 +112,6 @@ public class MainActivity extends AppCompatActivity implements SelectListener{
             myModelList.remove(viewHolder.getAdapterPosition());
             customAdapter.notifyDataSetChanged();
         }
+
     };
 }
