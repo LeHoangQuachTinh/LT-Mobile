@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements SelectListener{
     RecyclerView recyclerView;
     List<MyModel> myModelList;
     CustomAdapter customAdapter;
+    SearchView searchView;
     LinearLayout linearLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +38,30 @@ public class MainActivity extends AppCompatActivity implements SelectListener{
         });
 
         linearLayout = findViewById(R.id.linear_layout);
+        searchView = findViewById(R.id.search_view);
         displayItems();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+            @Override
+            public boolean onQueryTextChange(String newText){
+                filter(newText);
+                return true;
+            }
+        });
 
+
+    }
+    private void filter(String newText){
+        List<MyModel> filteredList = new ArrayList<>();
+        for (MyModel item : myModelList){
+            if (item.getName().toLowerCase().contains(newText.toLowerCase())){
+                filteredList.add(item);
+            }
+        }
+        customAdapter.filterList(filteredList);
     }
 
     private void displayItems(){

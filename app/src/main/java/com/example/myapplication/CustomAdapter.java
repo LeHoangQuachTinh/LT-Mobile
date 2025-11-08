@@ -16,8 +16,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
     private List<MyModel> list;
     private SelectListener listener;
 
-
-    public CustomAdapter(Context context, List<MyModel> list, SelectListener listener) {
+    public CustomAdapter(Context context, List<MyModel> list,SelectListener listener) {
         this.context = context;
         this.list = list;
         this.listener = listener;
@@ -50,5 +49,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
     public int getItemCount() {
         return list.size();
     }
-
+    public void filterList(List<MyModel> filteredList){
+        list = filteredList;
+        notifyDataSetChanged();
+    }
 }

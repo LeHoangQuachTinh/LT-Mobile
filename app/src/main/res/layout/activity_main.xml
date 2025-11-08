@@ -8,6 +8,24 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="@android:color/white">
+
+        <android.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Tìm kiếm"
+            android:background="@android:color/transparent"
+            android:layout_margin="4dp" />
+    </androidx.cardview.widget.CardView>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_main"
