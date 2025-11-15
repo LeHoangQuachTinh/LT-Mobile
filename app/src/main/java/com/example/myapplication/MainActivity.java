@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
     ViewPager2 viewPager;
-    ViewPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +21,16 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tabLayout);
         viewPager = findViewById(R.id.viewPager);
 
-        adapter = new ViewPagerAdapter(this);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(this);
         viewPager.setAdapter(adapter);
 
-        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
-            switch (position) {
-                case 0: tab.setText("🏡Home"); break;
-                case 1: tab.setText("🔍Search"); break;
-                case 2: tab.setText("💼Profile"); break;
-            }
-        }).attach();
+        new TabLayoutMediator(tabLayout, viewPager,
+                (tab, position) -> {
+                    switch (position) {
+                        case 0: tab.setText("📋List"); break;
+                        case 1: tab.setText("🥅Grid"); break;
+                        case 2: tab.setText("🕸️Stagger"); break;
+                    }
+                }).attach();
     }
 }

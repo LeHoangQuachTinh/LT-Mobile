@@ -13,26 +13,28 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
-    RecyclerView rcvProducts;
-    ArrayList<Product> list;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.activity_home_fragment, container, false);
 
-        rcvProducts = view.findViewById(R.id.rcvProducts);
-        rcvProducts.setLayoutManager(new LinearLayoutManager(getContext()));
+        RecyclerView rv = view.findViewById(R.id.recyclerList);
+        rv.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        list = new ArrayList<>();
-        list.add(new Product("iPhone 15 Pro Max", "32.990.000đ", android.R.drawable.ic_menu_camera));
-        list.add(new Product("Samsung S24 Ultra", "28.990.000đ", android.R.drawable.ic_menu_gallery));
-        list.add(new Product("Macbook Air M3", "29.990.000đ", android.R.drawable.ic_menu_manage));
+        ArrayList<Product> items = loadProducts();
 
-        ProductAdapter adapter = new ProductAdapter(getContext(), list);
-        rcvProducts.setAdapter(adapter);
+        rv.setAdapter(new ProductAdapter(items));
 
         return view;
+    }
+
+    private ArrayList<Product> loadProducts() {
+        ArrayList<Product> list = new ArrayList<>();
+        list.add(new Product("Cà phê sữa", "25.000đ", R.drawable.coffee));
+        list.add(new Product("Trà đào", "30.000đ", R.drawable.tea));
+        list.add(new Product("Sinh tố bơ", "40.000đ", R.drawable.sinh_to));
+        list.add(new Product("Nước cam", "35.000đ", R.drawable.orange));
+        return list;
     }
 }

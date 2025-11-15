@@ -41,10 +41,11 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
-    <!-- RecyclerView kết quả tìm kiếm -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcvSearch"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recyclerGrid"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
+
 
 </LinearLayout>
