@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ProfileFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SearchFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".HomeFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
